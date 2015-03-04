@@ -3,7 +3,7 @@ body{
     width: 100%;
     font-size: 15px;
     font-family: Avenir Next, Arial, sans-serif;
-    color: #303030;
+    color: #484848;
 }
 
 header, footer, section, div{
@@ -53,6 +53,10 @@ a:hover{
     color: #696969;
 }
 
+.main_menu a:hover{
+    color: #81cfbc
+}
+
 .logo{
     float: left;
     height: 30px;
@@ -83,6 +87,11 @@ a:hover{
     margin-top: 8pt;
 }
 
+.actions .weather:hover{
+    color: #81cfbc;
+    background-image: url("../img/cloud-h.png");
+}
+
 .actions .social{
     display: inline-block;
     font-size: 0;
@@ -111,6 +120,18 @@ a:hover{
     background: url("../img/tw.png") no-repeat center / cover;
 }
 
+.actions .vk:hover{
+    background: url("../img/vk-h.png") no-repeat center / cover;
+}
+
+.actions .fb:hover{
+    background: url("../img/fb-h.png") no-repeat center / cover;
+}
+
+.actions .tw:hover{
+    background: url("../img/tw-h.png") no-repeat center / cover;
+}
+
 .button{
     display: inline-block;
     height: 27pt;
@@ -136,8 +157,8 @@ a:hover{
 
 .button.b_green:hover{
     background-color: #ffffff;
-    border-color: #303030;
-    color: #303030;
+    border-color: #484848;
+    color: #484848;
 }
 
 .actions .login{
@@ -145,6 +166,10 @@ a:hover{
     float: right;
     font-size: 10pt;
     border: #4b4b4b 1px solid;
+}
+
+.actions .login:hover{
+    color: #ffffff;
 }
 
 .content{
@@ -288,10 +313,12 @@ a:hover{
     transition: opacity 300ms ease-out 0s;
 }
 
-.card_2:hover .description_holder,
+.big_card:hover .description_holder,
 .card_x3-card:hover .img .description_holder,
 .reportage:hover .description_holder,
-.long_list .item:hover .description_holder{
+.long_list .item:hover .description_holder,
+.c-covered:hover .description_holder,
+.js-onhover:hover .description_holder{
     opacity: 1;
 }
 
@@ -327,6 +354,9 @@ a:hover{
     width: 100%;
     display: block;
     height: 248pt;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .card_4 .card_holder{
@@ -348,7 +378,7 @@ a:hover{
 }
 
 .card .title a{
-    color: #303030;
+    color: #484848;
 }
 
 .card .date{
@@ -379,8 +409,8 @@ a:hover{
 .card .list .item{
     display: table;
     width: 100%;
-    color: #303030;
-    margin-bottom: 12pt;
+    color: #484848;
+    margin-bottom: 13pt;
 }
 
 .card .list .item:hover{
@@ -391,6 +421,7 @@ a:hover{
     display: table-cell;
     width: 60pt;
     vertical-align: middle;
+    position: relative;
 }
 
 .card .list .image img{
@@ -398,6 +429,7 @@ a:hover{
     -moz-border-radius: 20pt;
     -webkit-border-radius: 20pt;
     border-radius: 20pt;
+    display: block;
 }
 
 .card .list .name{
@@ -457,7 +489,7 @@ a:hover{
 }
 
 .c_name{
-    color: #303030;
+    color: #484848;
     font-weight: 600;
     font-size: 18pt;
 }
@@ -485,7 +517,7 @@ a:hover{
 .long_list .item{
     margin-bottom: 19pt;
     display: block;
-    color: #303030;
+    color: #484848;
     font-size: 14pt;
 }
 
@@ -510,7 +542,8 @@ a:hover{
     border-radius: 20pt;
 }
 
-.long_list .description_holder{
+.long_list .description_holder,
+.card .list .image .description_holder{
     -moz-border-radius: 20pt !important;
     -webkit-border-radius: 20pt !important;;
     border-radius: 20pt !important;;
@@ -521,6 +554,11 @@ a:hover{
     margin-bottom: 8pt;
 }
 
+.long_list .item p{
+    font-size: 12pt;
+    line-height: 1.2em;
+}
+
 .card_x3 .card_holder.img{
     width: 437pt;
 }
@@ -529,6 +567,9 @@ a:hover{
     width: 442pt;
     height: 325pt;
     float: left;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
 }
 
 .card_x3 .c_content{
@@ -542,7 +583,7 @@ a:hover{
 
 .card_x3 p{
     margin-top: 12pt;
-    line-height: 1.6em;
+    line-height: 1.2em;
 }
 
 .card_x3 .card{
@@ -554,16 +595,16 @@ a:hover{
 }
 
 .card_4.motivation{
-    padding: 23pt 30pt;
+    padding: 23pt 26pt;
+    position: relative;
 }
 
 .motivation .m_title{
-    color: #303030;
+    color: #484848;
     font-size: 12pt;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 22pt;
-    text-align: right;
 }
 
 .motivation .m_item{
@@ -590,6 +631,10 @@ a:hover{
 
 .motivation .m_footer{
     margin-top: 20pt;
+    position: absolute;
+    left: 0;
+    bottom: 23pt;
+    width: 100%;
 }
 
 .reportage .image_holder{
@@ -645,7 +690,8 @@ a.section:hover,
 .card_2:hover p,
 .card_x3-card:hover .c_content .c_name,
 .card_x3-card:hover .c_content p,
-.reportage:hover p{
+.reportage:hover p,
+a.item:hover span{
     color: #81cfbc !important;
 }
 
