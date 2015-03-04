@@ -2,7 +2,7 @@
 
   var timeout = null;
 
-  $('.card_4').on('mouseover', function(){
+  $('.js-onhover').on('mouseover', function(){
     var $card = $(this);
     clearTimeout(timeout);
     timeout = setTimeout(function(){

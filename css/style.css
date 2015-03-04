@@ -269,7 +269,8 @@ a:hover{
 }
 
 .image_holder .description_holder,
-.card_holder .description_holder{
+.card_holder .description_holder,
+.long_list .image .description_holder{
     opacity: 0;
     background: rgba(0,0,0,0.5);
     position: absolute;
@@ -289,7 +290,8 @@ a:hover{
 
 .card_2:hover .description_holder,
 .card_x3-card:hover .img .description_holder,
-.reportage .img .description_holder{
+.reportage:hover .description_holder,
+.long_list .item:hover .description_holder{
     opacity: 1;
 }
 
@@ -496,6 +498,22 @@ a:hover{
     height: 60pt;
     margin: 0 auto 9pt;
     display: block;
+    position: relative;
+    -moz-border-radius: 20pt;
+    -webkit-border-radius: 20pt;
+    border-radius: 20pt;
+}
+
+.long_list .item img{
+    -moz-border-radius: 20pt;
+    -webkit-border-radius: 20pt;
+    border-radius: 20pt;
+}
+
+.long_list .description_holder{
+    -moz-border-radius: 20pt !important;
+    -webkit-border-radius: 20pt !important;;
+    border-radius: 20pt !important;;
 }
 
 .long_list .item .name{
@@ -626,7 +644,8 @@ a.section:hover,
 .card_2:hover .c_name,
 .card_2:hover p,
 .card_x3-card:hover .c_content .c_name,
-.card_x3-card:hover .c_content p{
+.card_x3-card:hover .c_content p,
+.reportage:hover p{
     color: #81cfbc !important;
 }
 
