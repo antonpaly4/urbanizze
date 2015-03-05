@@ -109,27 +109,21 @@ a:hover{
 }
 
 .actions .vk{
-    background: url("../img/vk.png") no-repeat center / cover;
+    background: url("../img/vk.png") no-repeat center top / 100% auto;
 }
 
 .actions .fb{
-    background: url("../img/fb.png") no-repeat center / cover;
+    background: url("../img/fb.png") no-repeat center top / 100% auto;
 }
 
 .actions .tw{
-    background: url("../img/tw.png") no-repeat center / cover;
+    background: url("../img/tw.png") no-repeat center top / 100% auto;
 }
 
-.actions .vk:hover{
-    background: url("../img/vk-h.png") no-repeat center / cover;
-}
-
-.actions .fb:hover{
-    background: url("../img/fb-h.png") no-repeat center / cover;
-}
-
+.actions .fb:hover,
+.actions .vk:hover,
 .actions .tw:hover{
-    background: url("../img/tw-h.png") no-repeat center / cover;
+    background-position: center bottom;
 }
 
 .button{
