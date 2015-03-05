@@ -26,6 +26,7 @@ a:hover{
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: relative;
+    min-width: 931pt;
 }
 
 .header_content{
