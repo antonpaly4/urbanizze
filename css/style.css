@@ -454,6 +454,15 @@ a:hover{
     width: 226pt;
     height: 325pt;
     display: block;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.big_card.blog .big-image{
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
 }
 
 .big_card .card_holder{
