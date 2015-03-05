@@ -76,12 +76,12 @@ a:hover{
 .actions .weather{
     display: inline-block;
     height: 20pt;
-    background: url("../img/cloud.png") no-repeat left center;
-    background-size: auto 100%;
+    background: url("../img/cloud.png") no-repeat left top;
+    background-size: 32pt auto;
     font-size: 12pt;
     line-height: 20pt;
     color: #696969;
-    padding-left: 35pt;
+    padding-left: 36pt;
     font-weight: 600;
     float: left;
     margin-top: 8pt;
@@ -89,7 +89,7 @@ a:hover{
 
 .actions .weather:hover{
     color: #81cfbc;
-    background-image: url("../img/cloud-h.png");
+    background-position: left bottom;
 }
 
 .actions .social{
