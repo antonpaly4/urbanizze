@@ -19,27 +19,27 @@ a:hover{
 }
 
 .header{
-    height: 110pt;
+    height: 100pt;
     background: #ffffff;
-    padding: 37pt 20px;
+    padding: 37pt 0;
     text-align: center;
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: relative;
-    min-width: 931pt;
+    min-width: 672pt;
 }
 
 .header_content{
     display: inline-block;
     height: 30pt;
     line-height: 29pt;
-    width: 891pt;
+    width: 672pt;
 }
 
 .main_menu{
-    width: 341pt;
+    width: 276pt;
     float: left;
-    padding-left: 54pt;
+    padding-left: 50pt;
     box-sizing: border-box;
 }
 
@@ -47,8 +47,8 @@ a:hover{
     float: left;
     line-height: 29pt;
     height: 30pt;
-    margin-right: 32pt;
-    font-size: 15pt;
+    margin-right: 22pt;
+    font-size: 13pt;
     font-weight: 600;
 }
 
@@ -63,31 +63,32 @@ a:hover{
 .logo{
     float: left;
     height: 30px;
+    margin-top: 3pt;
 }
 
 .logo a img{
-    width: 140pt;
+    width: 107pt;
 }
 
 .actions{
     float: left;
     height: 35pt;
     line-height: 30pt;
-    margin-left: 35pt;
+    margin-left: 25pt;
 }
 
 .actions .weather{
     display: inline-block;
     height: 20pt;
     background: url("../../public/img/cloud.png") no-repeat left top;
-    background-size: 32pt auto;
-    font-size: 12pt;
+    background-size: 25pt auto;
+    font-size: 10pt;
     line-height: 20pt;
     color: #696969;
-    padding-left: 36pt;
+    padding-left: 27pt;
     font-weight: 600;
     float: left;
-    margin-top: 8pt;
+    margin-top: 9pt;
 }
 
 .actions .weather:hover{
@@ -98,16 +99,16 @@ a:hover{
 .actions .social{
     display: inline-block;
     font-size: 0;
-    margin: 5px 0 0 21pt;
-    height: 26pt;
+    margin: 6pt 0 0 13pt;
+    height: 20pt;
     overflow: hidden;
 }
 
 .actions .soc_btn{
-    width: 26pt;
-    height: 26pt;
+    width: 20pt;
+    height: 20pt;
     float: left;
-    margin-right: 10pt;
+    margin-right: 7pt;
     display: block;
 }
 
@@ -131,15 +132,15 @@ a:hover{
 
 .button{
     display: inline-block;
-    height: 27pt;
+    height: 20pt;
     padding: 0 14pt;
     border-radius: 14pt;
     -moz-border-radius: 14pt;
     -webkit-border-radius: 14pt;
     color: #4b4b4b;
     border: #929292 1px solid;
-    font-size: 12pt;
-    line-height: 27pt;
+    font-size: 10pt;
+    line-height: 19pt;
     box-sizing: border-box;
     transition: border-color 300ms ease-out 40ms, color 300ms ease-out 40ms;
     font-weight: 600;
@@ -159,9 +160,9 @@ a:hover{
 }
 
 .actions .login{
-    margin: 4pt 0 0 6pt;
+    margin: 6pt 0 0 4pt;
     float: right;
-    font-size: 10pt;
+    font-size: 9pt;
     border: #4b4b4b 1px solid;
 }
 
@@ -170,23 +171,23 @@ a:hover{
 }
 
 .content{
-    width: 891pt;
-    margin: 31pt auto;
+    width: 672pt;
+    margin: 23pt auto;
 }
 
 .cards{
-    margin-bottom: 15pt;
+    margin-bottom: 9pt;
     width: 100%;
-    height: 325pt;
+    height: 244pt;
 }
 
 .cards_x2{
-    height: 663pt;
+    height: 497pt;
     margin-top: 17px;
 }
 
 .cards_05{
-    height: 128pt;
+    height: 95pt;
 }
 
 .card{
@@ -197,7 +198,7 @@ a:hover{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    margin-right: 17pt;
+    margin-right: 14pt;
     height: 100%;
     display: block;
     text-align: center;
@@ -208,19 +209,19 @@ a:hover{
 }
 
 .card.card_x1{
-    width: 898pt;
+    width: 670pt;
 }
 
 .card.card_4{
-    width: 210pt;
+    width: 157pt;
 }
 
 .card.card_2{
-    width: 435pt;
+    width: 328pt;
 }
 
 .card.card_x3{
-    width: 660pt;
+    width: 498pt;
 }
 
 .card.card_x3.c-layout{
@@ -235,11 +236,11 @@ a:hover{
 }
 
 .card_4 .card_content{
-    height: 96pt;
+    height: 73pt;
 }
 
 .card_2 .card_content{
-    padding: 22pt 0 17pt;
+    padding: 15pt 0 17pt;
 }
 
 .pad_null{
@@ -255,7 +256,7 @@ a:hover{
 
 .card_2 .card_holder{
     width: 50%;
-    padding: 0 13pt;
+    padding: 0 9pt;
     vertical-align: top;
 }
 
@@ -266,12 +267,12 @@ a:hover{
 .card_4 .image_holder{
     position: relative;
     width: 100%;
-    height: 230pt;
+    height: 171pt;
     overflow: hidden;
 }
 
 .card_4.i-high .image_holder{
-    height: 248pt;
+    height: 186pt;
 }
 
 .card_4.i-high .card_image{
@@ -279,15 +280,15 @@ a:hover{
 }
 
 .card_4.i-high .card_content{
-    height: 76pt;
+    height: 58pt;
 }
 
 .card_4.i-high .card_holder{
-    padding-top: 21pt;
+    padding-top: 13pt;
 }
 
 .card_4.i-high .title{
-    margin-top: 6pt;
+    margin-top: 3pt;
 }
 
 .description_holder,
@@ -350,7 +351,7 @@ a:hover{
 .card_4 .card_image{
     width: 100%;
     display: block;
-    height: 248pt;
+    height: 171pt;
     -moz-border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
@@ -358,19 +359,19 @@ a:hover{
 
 .card_4 .card_holder{
     vertical-align: top;
-    padding-top: 14pt;
+    padding-top: 10pt;
 }
 
 .card .section{
     color: #666666;
-    font-size: 10pt;
+    font-size: 7pt;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .card .title{
-    margin-top: 14pt;
-    font-size: 15pt;
+    margin-top: 9pt;
+    font-size: 12pt;
     font-weight: 600;
 }
 
@@ -379,13 +380,13 @@ a:hover{
 }
 
 .card .date{
-    font-size: 10pt;
+    font-size: 8pt;
     font-weight: 600;
-    margin-top: 5pt;
+    margin-top: 2pt;
 }
 
 .pad-22{
-    padding: 0 22pt !important;
+    padding: 0 17pt !important;
 }
 
 .card .list{
@@ -394,12 +395,12 @@ a:hover{
 
 .card .list .title,
 .long_list .title{
-    font-size: 12pt;
+    font-size: 9pt;
     text-transform: uppercase;
     color: #929292;
     text-align: center;
     font-weight: 600;
-    margin: 0 0 18pt;
+    margin: 0 0 12pt;
     display: inline-block;
 }
 
@@ -407,7 +408,7 @@ a:hover{
     display: table;
     width: 100%;
     color: #484848;
-    margin-bottom: 13pt;
+    margin-bottom: 11pt;
 }
 
 .card .list .item:hover{
@@ -416,16 +417,16 @@ a:hover{
 
 .card .list .image{
     display: table-cell;
-    width: 60pt;
+    width: 45pt;
     vertical-align: middle;
     position: relative;
 }
 
 .card .list .image img{
     width: 100%;
-    -moz-border-radius: 20pt;
-    -webkit-border-radius: 20pt;
-    border-radius: 20pt;
+    -moz-border-radius: 18pt;
+    -webkit-border-radius: 18pt;
+    border-radius: 18pt;
     display: block;
 }
 
@@ -433,14 +434,14 @@ a:hover{
     display: table-cell;
     vertical-align: middle;
     text-align: left;
-    padding-left: 9pt;
-    font-size: 15pt;
+    padding-left: 6pt;
+    font-size: 12pt;
     font-weight: 600;
 }
 
 .card .list .name span{
     color: #747474;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .card .list-footer{
@@ -451,8 +452,8 @@ a:hover{
 }
 
 .card_2.big_card .big-image{
-    width: 226pt;
-    height: 325pt;
+    width: 172pt;
+    height: 244pt;
     display: block;
     -moz-border-radius: 5px 0 0 5px;
     -webkit-border-radius: 5px 0 0 5px;
@@ -473,23 +474,23 @@ a:hover{
 }
 
 .big_card .card_holder{
-    padding: 43pt 20pt;
+    padding: 32pt 11pt;
     vertical-align: top;
 }
 
 .big_card.blog .card_holder{
     vertical-align: middle;
-    padding: 40pt 32pt;
+    padding: 40pt 23pt;
 }
 
 
 .sect_title{
-    font-size: 12pt;
+    font-size: 10pt;
     text-transform: uppercase;
     color: #929292;
     text-align: center;
     font-weight: 600;
-    margin: 0 0 46pt;
+    margin: 0 0 35pt;
     display: block;
 }
 
@@ -498,13 +499,13 @@ a:hover{
 }
 
 .big_card.blog .sect_title{
-    margin-bottom: 28pt;
+    margin-bottom: 16pt;
 }
 
 .c_name{
     color: #484848;
     font-weight: 600;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 .card_2.big_card .c_name:hover{
@@ -513,22 +514,22 @@ a:hover{
 
 .card_2.big_card p,
 .reportage p{
-    margin-top: 20pt;
-    font-size: 12pt;
+    margin-top: 13pt;
+    font-size: 10pt;
     line-height: 1.2em;
 }
 
 .long_list{
-    padding: 23pt 19pt;
+    padding: 14pt 19pt;
 }
 
 .long_list .title{
-    margin-bottom: 18pt;
+    margin-bottom: 14pt;
     display: inline-block;
 }
 
 .long_list .item{
-    margin-bottom: 19pt;
+    margin-bottom: 13pt;
     display: block;
     color: #484848;
     font-size: 14pt;
@@ -539,14 +540,14 @@ a:hover{
 }
 
 .long_list .item .image{
-    width: 60pt;
-    height: 60pt;
-    margin: 0 auto 9pt;
+    width: 46pt;
+    height: 46pt;
+    margin: 0 auto 5pt;
     display: block;
     position: relative;
-    -moz-border-radius: 20pt;
-    -webkit-border-radius: 20pt;
-    border-radius: 20pt;
+    -moz-border-radius: 18pt;
+    -webkit-border-radius: 18pt;
+    border-radius: 18pt;
 }
 
 .long_list .item img{
@@ -564,16 +565,17 @@ a:hover{
 
 .long_list .item .name{
     font-weight: 600;
-    margin-bottom: 8pt;
+    margin-bottom: 4pt;
+    font-size: 11pt;
 }
 
 .long_list .item p{
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 1.2em;
 }
 
 .card_x3 .card_holder.img{
-    width: 433pt;
+    width: 329pt;
 }
 
 .card_x3-card .description_holder{
@@ -583,8 +585,8 @@ a:hover{
 }
 
 .card_x3 .c_image{
-    width: 433pt;
-    height: 325pt;
+    width: 329pt;
+    height: 244pt;
     float: left;
     -moz-border-radius: 5px 0 0 5px;
     -webkit-border-radius: 5px 0 0 5px;
@@ -592,21 +594,22 @@ a:hover{
 }
 
 .card_x3 .c_content{
-    padding: 46pt 20pt;
+    padding: 33pt 15pt;
     vertical-align: top;
 }
 
 .card_x3 .c_content .sect_title{
-    margin-bottom: 56pt;
+    margin-bottom: 41pt;
 }
 
 .card_x3 p{
-    margin-top: 12pt;
-    line-height: 1.2em;
+    margin-top: 8pt;
+    line-height: 1.1em;
+    font-size: 10pt;
 }
 
 .card_x3 .card{
-    margin-right: 15pt;
+    margin-right: 12pt;
 }
 
 .c_name.f_normal{
@@ -614,38 +617,39 @@ a:hover{
 }
 
 .card_4.motivation{
-    padding: 23pt 26pt;
+    padding: 16pt 23pt;
     position: relative;
 }
 
 .motivation .m_title{
     color: #484848;
-    font-size: 12pt;
+    font-size: 10pt;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 22pt;
+    margin-bottom: 30pt;
 }
 
 .motivation .m_item{
-    height: 63pt;
-    padding: 15pt 7pt 15pt 66pt;
+    height: 30pt;
+    padding-left: 38pt;
     text-transform: uppercase;
     text-align: left;
-    font-size: 9.5pt;
+    font-size: 7.5pt;
     font-weight: 600;
     line-height: 1.1em;
+    margin-bottom: 15pt;
 }
 
 .motivation .m_item.people{
-    background: url("../../public/img/people.png") no-repeat 7pt center / auto 50%;
+    background: url("../../public/img/people.png") no-repeat left top / auto 25pt;
 }
 
 .motivation .m_item.chat{
-    background: url("../../public/img/chat.png") no-repeat 7pt center / auto 35pt;
+    background: url("../../public/img/chat.png") no-repeat left top / auto 26pt;
 }
 
 .motivation .m_item.note{
-    background: url("../../public/img/notepad.png") no-repeat 7pt center / auto 37pt;
+    background: url("../../public/img/notepad.png") no-repeat left top / auto 30pt;
 }
 
 .motivation .m_footer{
@@ -657,13 +661,13 @@ a:hover{
 }
 
 .reportage .image_holder{
-    height: 159pt;
+    height: 120pt;
 }
 
 .reportage .card_content{
-    height: 162pt;
+    height: 124pt;
     position: relative;
-    padding-top: 62pt;
+    padding-top: 46pt;
 }
 
 .reportage .card_holder{
@@ -675,8 +679,8 @@ a:hover{
     position: absolute;
     width: 100%;
     left: 0;
-    top: -38pt;
-    font-size: 10pt;
+    top: -33pt;
+    font-size: 8pt;
     color: #666666;
     font-weight: 600;
     text-transform: uppercase;
@@ -687,8 +691,8 @@ a:hover{
     -webkit-border-radius: 37pt;
     border-radius: 37pt;
     border: #ffffff 2px solid;
-    width: 69pt;
-    height: 69pt;
+    width: 56pt;
+    height: 56pt;
     display: block;
     margin: 0 auto 8pt;
 }
@@ -698,7 +702,10 @@ a:hover{
 }
 
 .reportage p{
-    padding: 0 20pt;
+    padding: 0 15pt;
+    font-size: 9pt;
+    line-height: 1.2em;
+    margin-top: 12pt;
 }
 
 .card_4:hover .title a,
