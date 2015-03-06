@@ -19,9 +19,9 @@ a:hover{
 }
 
 .header{
-    height: 131pt;
+    height: 110pt;
     background: #ffffff;
-    padding: 52pt 20px;
+    padding: 37pt 20px;
     text-align: center;
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
