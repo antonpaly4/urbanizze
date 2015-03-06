@@ -1,0 +1,11 @@
+div.event__gallery-wrapper
+  div.event__gallery-holder.js-gallery-carousel(style=carouselWidth)
+    each image in images
+      div.event__gallery-image
+        img(src=image.url, alt=image.title)
+div.event__gallery-switcher
+  a.event__gallery-switcher__btn.event__gallery-switcher__btn-prev.js-slide-image(href="#", data-direction="left")
+  div.event__gallery-switcher__cnt
+    span.js-curent-viewed 1
+    span /#{imgCount}
+  a.event__gallery-switcher__btn.event__gallery-switcher__btn-next.js-slide-image(href="#", data-direction="right")

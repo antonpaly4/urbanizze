@@ -23,10 +23,12 @@
     &-wrapper
       size 100%
       overflow hidden
+      position relative
 
     &-holder
       absolute left top
       height 100%
+      transition left 400ms ease-out 0s
 
     &-image
       float left
@@ -136,10 +138,11 @@
       &__image
         position relative
         size 100% 108pt
+        overflow hidden
 
         & img
           border-radius 5pt 5pt 0 0
-          size 147pt 108pt
+          width 148pt
 
       &__desc
         padding-top 9pt

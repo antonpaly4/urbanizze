@@ -18,6 +18,18 @@ var carouselCollection = new photoCarouselCollection([
   {
     'url': 'public/img/photos/photo.jpg',
     'title': 'Alt text'
+  },
+  {
+    'url': 'public/img/photos/photo.jpg',
+    'title': 'Alt text'
+  },
+  {
+    'url': 'public/img/photos/photo.jpg',
+    'title': 'Alt text'
+  },
+  {
+    'url': 'public/img/photos/photo.jpg',
+    'title': 'Alt text'
   }
 ]);
 
