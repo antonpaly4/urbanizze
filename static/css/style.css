@@ -83,7 +83,7 @@ a:hover{
     background: url("../../public/img/cloud.png") no-repeat left top;
     background-size: 25pt auto;
     font-size: 10pt;
-    line-height: 20pt;
+    line-height: 15pt;
     color: #696969;
     padding-left: 27pt;
     font-weight: 600;
@@ -276,7 +276,7 @@ a:hover{
 }
 
 .card_4.i-high .card_image{
-    height: 248pt;
+    height: 186pt;
 }
 
 .card_4.i-high .card_content{
@@ -364,7 +364,7 @@ a:hover{
 
 .card .section{
     color: #666666;
-    font-size: 7pt;
+    font-size: 8pt;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -452,7 +452,7 @@ a:hover{
 }
 
 .card_2.big_card .big-image{
-    width: 172pt;
+    width: 171pt;
     height: 244pt;
     display: block;
     -moz-border-radius: 5px 0 0 5px;
