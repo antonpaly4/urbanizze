@@ -17,22 +17,30 @@
     float left
     size 449pt 100%
     position relative
-    background url("../img/ajax-loader.gif") no-repeat center #f2f2f2
+    background #f2f2f2
     border-radius 5pt
 
-    &-wrapper
+    &-wrapper,
+    &-loading
       size 100%
       overflow hidden
       position relative
 
+    &-loading
+      background url("../img/ajax-loader.gif") no-repeat center
+
     &-holder
       absolute left top
-      height 100%
-      transition left 400ms ease-out 0s
+      size 100%
 
     &-image
-      float left
+      absolute left top
       size 449pt 302pt
+      opacity 0
+      transition opacity 300ms ease-out 0s
+
+      &_active
+        opacity 1
 
       & img
         size 449pt 302pt

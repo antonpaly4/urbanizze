@@ -1,7 +1,9 @@
 div.event__gallery-wrapper
-  div.event__gallery-holder.js-gallery-carousel(style=carouselWidth)
+  div.event__gallery-holder.js-gallery-carousel
+    - var i = 0;
     each image in images
-      div.event__gallery-image
+      - i++;
+      div.event__gallery-image.js-carousel-image(class=i == 1 ? "event__gallery-image_active" : "")
         img(src=image.url, alt=image.title)
 div.event__gallery-switcher
   a.event__gallery-switcher__btn.event__gallery-switcher__btn-prev.js-slide-image(href="#", data-direction="left")

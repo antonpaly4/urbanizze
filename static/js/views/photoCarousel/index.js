@@ -16,50 +16,53 @@ var photoCarouselView = Backbone.View.extend({
     'click .js-slide-image': 'switchImage'
   },
 
-  calculate: function(){
-    return this.imageWidth * this.imagesCount;
-  },
-
   switchImage: function(e){
     var $btn = $(e.currentTarget)
       , direction = $btn.data('direction')
       , $carousel = $('.js-gallery-carousel')
-      , curPos = parseInt((parseFloat($carousel.css('left')) * 72 / 96).toFixed(0))
-      , $currentNumber = $('.js-curent-viewed')
-      , curImage = parseInt($currentNumber.text())
-      , newPos, newImg;
+      , $image = $carousel.find('.event__gallery-image_active')
+      , $iNumber = $('.js-curent-viewed')
+      , curImage = parseInt($iNumber.text())
+      , newNumber, $newImage;
 
     e.preventDefault();
 
     if($btn.hasClass('js-disabled')) return;
-
-    if(direction === 'left'){
-      newPos = curPos - this.imageWidth;
-      newImg = curImage + 1;
-    }
-    else{
-      newPos = this.imageWidth + curPos;
-      newImg = curImage - 1;
-    }
-    if(newImg < 1 || newImg > this.imagesCount) return;
-
     $btn.addClass('js-disabled');
 
-    $carousel.css('left', newPos + 'pt');
-    $currentNumber.text(newImg);
+    if(direction === 'right'){
+      $newImage = $image.next('.js-carousel-image').length ? $image.next('.js-carousel-image') : $carousel.find('.js-carousel-image:first-child');
+      newNumber = curImage + 1;
+    }
+    else{
+      $newImage = $image.prev('.js-carousel-image').length ? $image.prev('.js-carousel-image') : $carousel.find('.js-carousel-image:last-child');
+      newNumber = curImage - 1;
+    }
+    if(newNumber < 1) newNumber = this.imagesCount;
+    if(newNumber > this.imagesCount) newNumber = 1;
 
-    setTimeout(function(){$btn.removeClass('js-disabled')}, 400);
+    console.log($newImage);
+
+    $image.removeClass('event__gallery-image_active');
+    setTimeout(function(){
+      $newImage.addClass('event__gallery-image_active');
+    }, 250);
+
+    $iNumber.text(newNumber);
+
+    setTimeout(function(){
+      $btn.removeClass('js-disabled');
+    }, 550);
   },
 
   render: function(){
-    var cWidth = 'width:' + this.calculate() + 'pt'
-      , images = [];
+    var images = [];
 
     _.each(carouselCollection.models, function(image){
       images.push({url: image.get('url'), title: image.get('title')});
     });
 
-    $(this.el).append(template({carouselWidth: cWidth, images: images, imgCount: this.imagesCount}));
+    $(this.el).html(template({images: images, imgCount: this.imagesCount}));
   }
 });
 

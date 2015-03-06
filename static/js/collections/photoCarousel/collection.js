@@ -12,7 +12,7 @@ var carouselCollection = new photoCarouselCollection([
     'title': 'Alt text'
   },
   {
-    'url': 'public/img/photos/photo.jpg',
+    'url': 'public/img/photos/big.jpg',
     'title': 'Alt text'
   },
   {
@@ -20,7 +20,7 @@ var carouselCollection = new photoCarouselCollection([
     'title': 'Alt text'
   },
   {
-    'url': 'public/img/photos/photo.jpg',
+    'url': 'public/img/photos/big.jpg',
     'title': 'Alt text'
   },
   {
@@ -28,7 +28,7 @@ var carouselCollection = new photoCarouselCollection([
     'title': 'Alt text'
   },
   {
-    'url': 'public/img/photos/photo.jpg',
+    'url': 'public/img/photos/big.jpg',
     'title': 'Alt text'
   }
 ]);
