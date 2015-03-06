@@ -31,6 +31,8 @@ var photoCarouselView = Backbone.View.extend({
 
     e.preventDefault();
 
+    if($btn.hasClass('js-disabled')) return;
+
     if(direction === 'left'){
       newPos = curPos - this.imageWidth;
       newImg = curImage + 1;
@@ -41,8 +43,12 @@ var photoCarouselView = Backbone.View.extend({
     }
     if(newImg < 1 || newImg > this.imagesCount) return;
 
+    $btn.addClass('js-disabled');
+
     $carousel.css('left', newPos + 'pt');
     $currentNumber.text(newImg);
+
+    setTimeout(function(){$btn.removeClass('js-disabled')}, 400);
   },
 
   render: function(){
