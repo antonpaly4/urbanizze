@@ -79,7 +79,7 @@ a:hover{
 
 .actions .weather{
     display: inline-block;
-    height: 20pt;
+    height: 15.5pt;
     background: url("../../public/img/cloud.png") no-repeat left top;
     background-size: 25pt auto;
     font-size: 10pt;
