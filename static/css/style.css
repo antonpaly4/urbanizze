@@ -182,7 +182,7 @@ a:hover{
 }
 
 .cards_x2{
-    height: 497pt;
+    height: 503pt;
 }
 
 .cards_05{
@@ -208,19 +208,19 @@ a:hover{
 }
 
 .card.card_x1{
-    width: 670pt;
+    width: 674pt;
 }
 
 .card.card_4{
-    width: 157pt;
+    width: 158pt;
 }
 
 .card.card_2{
-    width: 328pt;
+    width: 330pt;
 }
 
 .card.card_x3{
-    width: 498pt;
+    width: 502pt;
 }
 
 .card.card_x3.c-layout{
@@ -605,10 +605,6 @@ a:hover{
     margin-top: 8pt;
     line-height: 1.2em;
     font-size: 10pt;
-}
-
-.card_x3 .card{
-    margin-right: 12pt;
 }
 
 .c_name.f_normal{
