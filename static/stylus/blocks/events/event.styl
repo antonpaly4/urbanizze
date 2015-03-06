@@ -20,9 +20,21 @@
     background url("../img/ajax-loader.gif") no-repeat center #f2f2f2
     border-radius 5pt
 
-    & img
+    &-wrapper
+      size 100%
+      overflow hidden
+
+    &-holder
+      absolute left top
+      height 100%
+
+    &-image
+      float left
       size 449pt 302pt
-      border-radius 5pt
+
+      & img
+        size 449pt 302pt
+        border-radius 5pt
 
     &-switcher
       absolute left 2pt bottom -36pt
@@ -64,17 +76,18 @@
 
     &-place
       margin-top 6pt
-      font-size 12pt
+      font-size 10pt
       text-transform uppercase
+      line-height 1.2em
 
     &-address
-      font-size 11pt
+      font-size 10pt
       font-weight 600
       margin 6pt 0 27pt
 
     &-summary
       margin-top 10pt
-      font-size 11pt
+      font-size 10pt
 
       &_value
         font-size 12pt
@@ -94,7 +107,7 @@
       line-height 1.2em
 
     &-image
-      margin 28pt 0 14pt
+      margin 28pt 0 28pt
       size 100% 427pt
       border-radius 10pt
 
@@ -140,7 +153,7 @@
         &-time
           color $legendColor
           font-size 9pt
-          margin-top 3pt
+          margin-top 2pt
 
       &:hover a
         color $linkHover
