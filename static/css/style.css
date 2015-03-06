@@ -100,15 +100,15 @@ a:hover{
     display: inline-block;
     font-size: 0;
     margin: 6pt 0 0 13pt;
-    height: 20pt;
+    height: 22pt;
     overflow: hidden;
 }
 
 .actions .soc_btn{
-    width: 20pt;
-    height: 20pt;
+    width: 21pt;
+    height: 21pt;
     float: left;
-    margin-right: 7pt;
+    margin-right: 6pt;
     display: block;
 }
 
@@ -176,14 +176,13 @@ a:hover{
 }
 
 .cards{
-    margin-bottom: 9pt;
+    margin-bottom: 15pt;
     width: 100%;
     height: 244pt;
 }
 
 .cards_x2{
     height: 497pt;
-    margin-top: 17px;
 }
 
 .cards_05{
