@@ -1,0 +1,17 @@
+{
+  "name": "urbanizze",
+  "version": "0.1.0",
+  "homepage": "https://github.com/antonpaly4/urbanizze",
+  "authors": [
+    "antonpaly4 <anton.korchagin@takestep.ru>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
