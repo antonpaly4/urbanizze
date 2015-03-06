@@ -1,104 +1,105 @@
 .event
-  padding 40pt
+  padding 32pt 25pt
   border-radius 5pt
   width 100%
-  margin-bottom 30pt
+  margin 0 0 30pt
 
   &__title
     text-align center
     font-size 24px
     font-weight 600
-    margin-bottom 47pt
+    margin-bottom 34pt
 
   &__top
-    size 100% 403pt
+    size 100% 302pt
 
   &__gallery
     float left
-    size 560pt 100%
+    size 449pt 100%
     position relative
     background url("../img/ajax-loader.gif") no-repeat center #f2f2f2
     border-radius 5pt
 
     & img
-      size 560pt 403pt
+      size 449pt 302pt
       border-radius 5pt
 
     &-switcher
-      absolute left 3pt bottom -45pt
+      absolute left 2pt bottom -36pt
 
       &__btn
-        size 33pt
+        size 24pt
         display inline-block
         font-size 0
         float left
 
         &-prev
-          background url('../img/gallery/switchers-left.png') no-repeat left top / 32pt auto
+          background url('../img/gallery/switchers-left.png') no-repeat left top / 24pt auto
 
         &-next
-          background url('../img/gallery/switchers-right.png') no-repeat left top / 32pt auto
+          background url('../img/gallery/switchers-right.png') no-repeat left top / 24pt auto
 
         &:hover
           background-position left bottom
 
       &__cnt
         float left
-        font-size 15pt
-        font-weight 600pt
-        line-height 32pt
-        margin 0 14pt
+        font-size 12pt
+        font-weight 600
+        line-height 23pt
+        margin 0 10pt
 
   &__info
     float right
-    size 215pt 100%
+    size 158pt 100%
     background #fafafa
     box-shadow 0 0 2px rgba(0, 0, 0, 0.2)
     text-align center
-    padding 15pt 10pt
+    padding 11pt 10pt
+    margin-right 0
 
     &-image
-      size 92pt
-      border-radius 30pt
+      size 69pt
+      border-radius 27pt
 
     &-place
-      margin-top 10pt
-      font-size 16pt
+      margin-top 6pt
+      font-size 12pt
       text-transform uppercase
 
     &-address
-      font-size 15pt
+      font-size 11pt
       font-weight 600
-      margin 14pt 0 30pt
+      margin 6pt 0 27pt
 
     &-summary
-      margin-top 15pt
-      font-size 14pt
+      margin-top 10pt
+      font-size 11pt
 
       &_value
-        font-size 15pt
-        margin-top 7pt
+        font-size 12pt
+        margin-top 3pt
         font-weight 600
 
         & .ruble
           text-decoration line-through
 
   &__description
-    margin-top 85pt
+    margin-top 62pt
     text-align left
 
     & p
-      padding 0 65pt
-      font-size 18pt
+      padding 0 47pt
+      font-size 14pt
       line-height 1.2em
 
     &-image
-      margin 35pt 0
-      size 100% 570pt
+      margin 28pt 0 14pt
+      size 100% 427pt
       border-radius 10pt
 
   &__places
-    margin-top 60pt
+    margin-top 36pt
 
     &-holder
       overflow hidden
@@ -106,9 +107,9 @@
       padding 1pt 1pt 2pt
 
     &-place
-      size 191pt
+      size 147pt
       float left
-      margin-right 15pt
+      margin-right 10pt
       background #fafafa
       box-shadow 0 0 2px rgba(0, 0, 0, 0.2)
       border-radius 5pt
@@ -121,25 +122,25 @@
 
       &__image
         position relative
-        size 100% 130pt
+        size 100% 108pt
 
         & img
           border-radius 5pt 5pt 0 0
-          size 191pt 130pt
+          size 147pt 108pt
 
       &__desc
-        padding-top 13pt
+        padding-top 9pt
         font-weight 600
         text-align center
 
         & a
           color $textColor
-          font-size 15pt
+          font-size 12pt
 
         &-time
           color $legendColor
-          font-size 12pt
-          margin-top 6pt
+          font-size 9pt
+          margin-top 3pt
 
       &:hover a
         color $linkHover
