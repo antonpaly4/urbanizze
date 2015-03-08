@@ -1,0 +1,98 @@
+.events_list
+  padding 0
+  float none
+
+  &__add
+    padding 30pt 0
+    border-bottom #1a1a1a 1px solid
+    text-align center
+
+    &-btn
+      border-radius 10pt
+      size 160pt 32pt
+      color #ffffff
+      font-size 16pt
+      text-align center
+      line-height 32pt
+      display inline-block
+      background $linkHover
+      box-sizing border-box
+
+      &:hover
+        background #ffffff
+        border($linkHover)
+
+  &__event
+    border-bottom #1a1a1a 1px solid
+    padding 15pt 20pt
+    display table
+    width 100%
+
+    &:last-child
+      border none
+
+    &-image
+      display table-cell
+      vertical-align middle
+      width 53pt
+
+      & img
+        size 53pt 42pt
+
+    &-title
+      font-size 14pt
+      padding-left 15pt
+      width 150pt
+      line-height 1.2em
+      display table-cell
+      vertical-align middle
+
+      & a
+        color $textColor
+
+    &-date
+      font-size 14pt
+      width 100pt
+      padding 0 15pt
+      display table-cell
+      vertical-align middle
+
+    &-stats
+      width 80pt
+      padding 0 15pt
+      display table-cell
+      vertical-align middle
+
+      &__item
+        height 20pt
+        padding-left 25pt
+        margin-bottom 5pt
+        background url("../img/events/stats.png") no-repeat center / 20pt auto
+        line-height 20pt
+        display inline-block
+
+        &-views
+          background-position 0 3pt
+
+        &-likes
+          background-position left bottom
+
+    &-actions
+      width 120pt
+      padding 0 15pt
+      display table-cell
+      vertical-align middle
+
+      &__btn
+        height 20pt
+        background url("../img/events/actions.png") no-repeat center / auto 20pt
+        display inline-block
+
+        &-statistic
+          width 32pt
+          margin-right 15pt
+          background-position left top
+
+        &-edit
+          width 20pt
+          background-position right top
