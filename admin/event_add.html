@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>URBANIZZE | Events list</title>
+  <meta name="viewport" content="width=devise-widht, initial-scale=1.0">
+  <link href="../public/css/reset.css" type="text/css" rel="stylesheet"/>
+  <link href="../public/css/style.css" type="text/css" rel="stylesheet"/>
+  <link href="../public/css/admin.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+  <section class="header_content">
+    <nav class="main_menu">
+      <ul>
+        <li><a href="#" class="active">мероприятия</a></li>
+        <li><a href="#">места</a></li>
+        <li><a href="#">блоги</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <a href="/">
+        <img src="../public/img/logo.png" alt="URBANIZZE"/>
+      </a>
+    </div>
+  </section>
+</header>
+<section class="content">
+  <div class="card event_edit">
+    <form class="event_edit__form">
+      <label for="name">Название
+        <input name="name" id="name" type="text" class="event_edit__form-input"/>
+      </label>
+      <label for="link">Ссылка
+        <input name="link" id="link" type="text" class="event_edit__form-input"/>
+      </label>
+      <label for="category">Название
+        <select name="category" id="category" class="event_edit__form-select"/>
+          <option value="c1">Category 1</option>
+          <option value="c2">Category 2</option>
+          <option value="c3">Category 3</option>
+        </select>
+      </label>
+      <div class="event_edit__form-row">
+        <textarea name="desc" id="desc" class="event_edit__form-text"></textarea>
+        <div class="event_edit__form-label">Описание</div>
+      </div>
+      <label for="address">Адрес
+        <input name="address" id="address" type="text" class="event_edit__form-input"/>
+      </label>
+      <div class="event_edit__form-row">
+        <div class="event_edit__form-time">
+          <span class="event_edit__form-time__label event_edit__form-time__label-required">Начало</span>
+          <div class="event_edit__form-time_pick">
+            <select name="startDate">
+              <option selected>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+            <select name="startMonth">
+              <option value="01" selected>января</option>
+              <option value="02" >февраля</option>
+              <option value="03" >марта</option>
+              <option value="04" >апреля</option>
+              <option value="05" >мая</option>
+              <option value="06" >июня</option>
+              <option value="07" >июля</option>
+              <option value="08" >августа</option>
+              <option value="09" >сентября</option>
+              <option value="10" >октября</option>
+              <option value="11" >ноября</option>
+              <option value="12" >декабря</option>
+            </select>
+            <select name="startYear">
+              <option selected>2015</option>
+              <option >2016</option>
+              <option >2017</option>
+              <option >2018</option>
+            </select>
+            <span>&mdash;</span>
+            <select name="StartHour">
+              <option value="00" selected>00</option>
+              <option value="01" >01</option>
+              <option value="02" >02</option>
+              <option value="03" >03</option>
+              <option value="04" >04</option>
+              <option value="05" >05</option>
+              <option value="06" >06</option>
+              <option value="07" >07</option>
+              <option value="08" >08</option>
+              <option value="09" >09</option>
+              <option value="10" >10</option>
+              <option value="11" >11</option>
+              <option value="12" >12</option>
+              <option value="13" >13</option>
+              <option value="14" >14</option>
+              <option value="15" >15</option>
+              <option value="16" >16</option>
+              <option value="17" >17</option>
+              <option value="18" >18</option>
+              <option value="19" >19</option>
+              <option value="20" >20</option>
+              <option value="21" >21</option>
+              <option value="22" >22</option>
+              <option value="23" >23</option>
+            </select>
+            <span>:</span>
+            <select name="StartMinute">
+              <option value="00" selected>00</option>
+              <option value="05" >05</option>
+              <option value="10" >10</option>
+              <option value="15" >15</option>
+              <option value="20" >20</option>
+              <option value="25" >25</option>
+              <option value="30" >30</option>
+              <option value="35" >35</option>
+              <option value="40" >40</option>
+              <option value="45" >45</option>
+              <option value="50" >50</option>
+              <option value="55" >55</option>
+            </select>
+          </div>
+          <span class="event_edit__form-time__label">Окончание</span>
+          <div class="js-box">
+            <a href="#" class="js-show-hidden">Добавить дату окончания</a>
+            <div class="event_edit__form-time_pick invisible js-hidden">
+              <select name="startDate">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+              <select name="startMonth">
+                <option value="01" selected>января</option>
+                <option value="02" >февраля</option>
+                <option value="03" >марта</option>
+                <option value="04" >апреля</option>
+                <option value="05" >мая</option>
+                <option value="06" >июня</option>
+                <option value="07" >июля</option>
+                <option value="08" >августа</option>
+                <option value="09" >сентября</option>
+                <option value="10" >октября</option>
+                <option value="11" >ноября</option>
+                <option value="12" >декабря</option>
+              </select>
+              <select name="startYear">
+                <option selected>2015</option>
+                <option >2016</option>
+                <option >2017</option>
+                <option >2018</option>
+              </select>
+              <span>&mdash;</span>
+              <select name="StartHour">
+                <option value="00" selected>00</option>
+                <option value="01" >01</option>
+                <option value="02" >02</option>
+                <option value="03" >03</option>
+                <option value="04" >04</option>
+                <option value="05" >05</option>
+                <option value="06" >06</option>
+                <option value="07" >07</option>
+                <option value="08" >08</option>
+                <option value="09" >09</option>
+                <option value="10" >10</option>
+                <option value="11" >11</option>
+                <option value="12" >12</option>
+                <option value="13" >13</option>
+                <option value="14" >14</option>
+                <option value="15" >15</option>
+                <option value="16" >16</option>
+                <option value="17" >17</option>
+                <option value="18" >18</option>
+                <option value="19" >19</option>
+                <option value="20" >20</option>
+                <option value="21" >21</option>
+                <option value="22" >22</option>
+                <option value="23" >23</option>
+              </select>
+              <span>:</span>
+              <select name="StartMinute">
+                <option value="00" selected>00</option>
+                <option value="05" >05</option>
+                <option value="10" >10</option>
+                <option value="15" >15</option>
+                <option value="20" >20</option>
+                <option value="25" >25</option>
+                <option value="30" >30</option>
+                <option value="35" >35</option>
+                <option value="40" >40</option>
+                <option value="45" >45</option>
+                <option value="50" >50</option>
+                <option value="55" >55</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <label for="cost">Стоимость
+        <input name="cost" id="cost" type="text" class="event_edit__form-input"/>
+      </label>
+      <div class="event_edit__form-row">
+        <div class="event_edit__form-files">
+          <a href="#">добавить фотографии</a>
+        </div>
+      </div>
+      <label for="phone">Телефон
+        <input name="phone" id="phone" type="text" class="event_edit__form-input"/>
+      </label>
+      <label for="web">Сайт
+        <input name="web" id="web" type="text" class="event_edit__form-input"/>
+      </label>
+      <label for="vk">Вконтакте
+        <input name="vk" id="vk" type="text" class="event_edit__form-input"/>
+      </label>
+      <label for="fb">Фейсбук
+        <input name="fb" id="fb" type="text" class="event_edit__form-input"/>
+      </label>
+      <div class="event_edit__form-row">
+      <div class="event_edit__form-preview">
+        <a href="#">предпросмотр</a>
+      </div>
+      </div>
+      <div class="event_edit__form-row">
+        <div class="event_edit__form-actions">
+          <a href="#" class="event_edit__form-btn">опубликовать</a>
+          <a href="#" class="event_edit__form-btn event_edit__form-btn_negative">в черновик</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<script src="../public/js/vendor.bundle.js"></script>
+<script src="../public/js/app.bundle.js"></script>
+</body>
+</html>

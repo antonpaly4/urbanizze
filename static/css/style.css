@@ -56,7 +56,8 @@ a:hover{
     color: #696969;
 }
 
-.main_menu a:hover{
+.main_menu a:hover,
+.main_menu a.active{
     color: #81cfbc
 }
 
@@ -716,3 +717,6 @@ a.item:hover span{
     color: #81cfbc !important;
 }
 
+.invisible{
+    display: none;
+}

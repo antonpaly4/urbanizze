@@ -1,0 +1,116 @@
+.event_edit
+  padding 20pt
+  float none
+
+  &__form
+
+    & label
+    &-label
+      text-align right
+      display block
+      font-size 12pt
+      margin-bottom 10pt
+
+    &-input,
+    &-select,
+    &-text,
+    &-files
+      border(#a1a1a1)
+      height 25pt
+      border-radius 7pt
+      margin-left 10pt
+      line-height 25pt
+      font-size 11pt
+      width 470pt
+      padding 0 5pt
+      box-sizing border-box
+
+    &-row
+      overflow hidden
+      margin-bottom 10pt
+
+    &-text,
+    &-files
+      height 300pt
+      line-height 1.2em
+      float right
+
+    &-files a
+      color $textColor
+      text-decoration underline
+      line-height 30pt
+
+    &-label
+      line-height 25pt
+
+    &-time
+      text-align left
+      width 470pt
+      float right
+      margin-top 10pt
+
+      & a
+        color $textColor
+        text-decoration underline
+        line-height 30pt
+
+      &__label
+        font-size 14pt
+        margin-bottom 8pt
+
+        &-required:after
+          content "*"
+          color #b6b3b1
+          margin-left 3pt
+
+      &_pick
+        margin 10pt 0
+
+        & select,
+        & span
+          display inline-block
+          margin-right 10pt
+          font-size 12pt
+
+        & span
+          margin 0 5pt 0 -5pt
+
+    &-preview
+      margin-bottom 10pt
+      font-size 14pt
+      float right
+      width 470pt
+
+      & a
+        color $textColor
+        text-decoration underline
+        line-height 30pt
+
+    &-actions
+      width 470pt
+      float right
+
+    &-btn
+      border-radius 10pt
+      height 32pt
+      padding 0 20pt
+      color #ffffff
+      font-size 16pt
+      text-align center
+      line-height 32pt
+      display inline-block
+      background $linkHover
+      box-sizing border-box
+      margin-right 20pt
+      text-transform uppercase
+
+      &:hover
+        background #ffffff
+        border($linkHover)
+
+      &_negative
+        background #ffffff
+        border($textColor)
+        color $textColor
+        text-transform none
+
