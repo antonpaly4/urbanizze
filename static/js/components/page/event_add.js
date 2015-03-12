@@ -1,6 +1,6 @@
 var uploader = require('../uploader/uploader');
 
-if(state.upldInit == true){
+if(state.page == 'event_add'){
   uploader.init();
   $('.js-uploader-files-list').sortable();
 };
