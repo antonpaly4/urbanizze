@@ -57,7 +57,9 @@
       </label>
       <div class="event_edit__form-row">
         <div class="event_edit__form-files">
-          <a href="#">добавить фотографии</a>
+          <a href="#" class="js-add-files">добавить фотографии</a>
+          <input type="file" name="file" class="js-file-add" multiple="true" />
+          <ul class="js-uploader-files-list"></ul>
         </div>
       </div>
       <label for="phone">Телефон
@@ -86,6 +88,12 @@
     </form>
   </div>
 </section>
+<script>
+  state = {
+    page: 'place_add',
+    upldInit: true
+  }
+</script>
 <script src="../public/js/vendor.bundle.js"></script>
 <script src="../public/js/app.bundle.js"></script>
 </body>

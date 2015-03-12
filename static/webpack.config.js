@@ -35,7 +35,8 @@ module.exports = {
   resolve: {
     alias: {
       bower: vendorPath,
-      jquery: 'bower/jquery'
+      jquery: 'bower/jquery',
+      'jquery-ui-sortable': 'bower/jquery-ui-sortable/jquery-ui-sortable.min.js'
     },
     extensions: ['', '.js', '.styl', '.css'],
     root: [staticPath, vendorPath]
