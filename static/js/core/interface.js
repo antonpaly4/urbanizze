@@ -22,6 +22,18 @@ $(document)
       , $hidden = $box.find('.js-hidden');
 
     $link.hide();
+    $('.js-delete-removable').show();
     $hidden.removeClass('invisible');
+  })
+  .on('click', '.js-delete-removable', function(e){
+    e.preventDefault();
+
+    var $link = $(this)
+      , $box = $link.closest('.js-box')
+      , $removable = $box.find('.js-removable');
+
+    $link.hide();
+    $('.js-show-hidden').show();
+    $removable.addClass('invisible');
   })
 ;

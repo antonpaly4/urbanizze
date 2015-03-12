@@ -148,10 +148,12 @@
               <option value="55" >55</option>
             </select>
           </div>
-          <span class="event_edit__form-time__label">Окончание</span>
           <div class="js-box">
+            <div class="event_edit__form-time__label">
+              Окончание <a class="event_edit__form-time__delete js-delete-removable" href="#">удалить</a>
+            </div>
             <a href="#" class="js-show-hidden">Добавить дату окончания</a>
-            <div class="event_edit__form-time_pick invisible js-hidden">
+            <div class="event_edit__form-time_pick invisible js-hidden js-removable">
               <select name="startDate">
                 <option selected>1</option>
                 <option>2</option>

@@ -52,16 +52,19 @@
       & a
         color $textColor
         text-decoration underline
-        line-height 30pt
+        line-height 48pt
 
       &__label
         font-size 14pt
-        margin-bottom 8pt
 
         &-required:after
           content "*"
           color #b6b3b1
           margin-left 3pt
+
+      &__delete
+        display none
+        line-height 14pt !important
 
       &_pick
         margin 10pt 0 20pt
