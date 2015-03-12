@@ -64,7 +64,12 @@ function _init(){
     })
     .on('change', '.js-file-add', function(){
       _addFiles(this.files);
-    });
+    })
+    .on('click', '.js-file-delete', function(e){
+      e.preventDefault();
+      $(this).closest('.js-uploader-file').remove();
+    })
+  ;
 }
 
 module.exports = {

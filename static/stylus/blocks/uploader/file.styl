@@ -6,6 +6,7 @@ input[type=file]
   size 70pt 90pt
   margin 5pt 2pt
   cursor move
+  position relative
 
   &__image
     size 70pt
@@ -20,3 +21,24 @@ input[type=file]
   &__progress
     size 0 2pt
     background #0040D0
+
+  &__delete
+    display none
+    size 15pt
+    absolute right 0 top 0
+
+    & a
+      line-height 15pt
+      size 15pt
+      display block
+      font-size 8pt
+      font-weight 600
+      color $textColor
+      border-radius 5pt
+      background #ffffff
+      text-decoration none
+      border($textColor)
+      box-sizing border-box
+
+  &:hover &__delete
+    display block
