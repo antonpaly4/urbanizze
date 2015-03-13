@@ -29,13 +29,13 @@ gulp.task('stylus', function(){
       'Firefox >= 28',
       'Explorer >= 9']))
     .pipe(csso())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./web/public/css'));
 });
 
 gulp.task('css', function(){
   gulp.src('./static/css/*.css')
     .pipe(csso())
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./web/public/css'));
 });
 
 gulp.task('webpack', function(){
@@ -51,5 +51,5 @@ gulp.task('webpack', function(){
 gulp.task('imagemin', function(){
   gulp.src(['./static/img/**/*'])
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('./public/img'));
+    .pipe(gulp.dest('./web/public/img'));
 });

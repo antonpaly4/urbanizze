@@ -4,7 +4,7 @@ var path = require('path')
   , webpack = require('webpack');
 
 var staticPath = path.resolve(__dirname)
-  , publicPath = path.resolve(__dirname, '../', './public')
+  , publicPath = path.resolve(__dirname, '../', './web/public')
   , vendorPath = path.join(staticPath, 'js/vendor');
 
 module.exports = {

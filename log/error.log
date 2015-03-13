@@ -1,0 +1,1 @@
+2015/03/13 05:10:02 [error] 2432#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 46.39.46.24, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "178.62.249.252"
